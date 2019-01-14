@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
-  config.application_name = "My Application Name"
-  config.mailer_sender = "change-me@domain.org"
+  config.application_name = "Participa.cloud"
+  config.mailer_sender = "info@participa.cloud"
 
   # Change these lines to set your preferred locales
   config.default_locale = :en
