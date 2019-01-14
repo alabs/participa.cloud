@@ -7,7 +7,6 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 
 require "capistrano/bundler"
-require "capistrano/delayed_job"
 require "capistrano/puma"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
