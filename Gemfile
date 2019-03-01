@@ -12,8 +12,9 @@ gem "airbrake", "~> 5.0"
 gem "bootsnap", "~> 1.3"
 gem "faker", "~> 1.9"
 gem "figaro", "~> 1.1"
-gem "sidekiq", "~> 5.2"
 gem "puma", "~> 3.0"
+gem "redis-namespace"
+gem "sidekiq", "~> 5.2"
 gem "uglifier", "~> 4.1"
 
 group :development, :test do
