@@ -1,10 +1,56 @@
-# participa_cloud
+
+# Participa Cloud Demo App
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
-This is the open-source repository for participa_cloud, based on [Decidim](https://github.com/decidim/decidim).
+This is the open-source repository for Participa Cloud Demo, based on [Decidim](https://decidim.org).
+
+## Starting the application
+
+```bash
+cp .env.example .env
+touch .env.development
+docker-compose up -d
+```
+
+## Stoping the application
+
+```bash
+docker-compose down
+```
+
+## Upgrading
+
+Update your Gemfile, where 0.16.0 is the [last published version](https://github.com/decidim/decidim/releases).
+
+```ruby
+DECIDIM_VERSION = "0.16.0"
+
+gem "decidim", DECIDIM_VERSION
+gem "decidim-dev", DECIDIM_VERSION
+```
+
+Run these commands to upgrade and make sure you get all the latest migrations:
+
+```bash
+docker-compose run app bundle update decidim
+docker-compose run app rails decidim:upgrade
+docker-compose run app rails db:migrate
+```
 
 ## Setting up the application
+
+### Development
+
+For quick-starting on development environment, we recommend on using the demo data (seeds). You can use them with:
+
+```bash
+docker-compose run app rails db:seed
+```
+
+### Production
+
+For production environment, you will want to start on a new database.
 
 You will need to do some steps before having the app working properly once you've deployed it:
 
@@ -20,3 +66,15 @@ user.save!
 6. Fill the rest of the form and submit it.
 
 You're good to go!
+
+## Documentation
+
+* [Functions and Features](https://docs.decidim.org/features/en/general-description/) - How Decidim works, a detailed feature description, and the roadmap for 2017/2018.
+* [Decidim’s Social Contract](https://docs.decidim.org/social-contract/en/social-contract/) - Code for democratic guarantees and open collaboration
+* [Developers manual](https://docs.decidim.org/develop/en/introduction/)
+* [Checklist](https://docs.decidim.org/develop/en/checklist/)
+
+## License
+
+GNU AFFERO GENERAL PUBLIC LICENSE (Version 3).
+
