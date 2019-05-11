@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.16.0"
+gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.17-stable"
 # gem "decidim-consultations", "0.16.0"
 # gem "decidim-initiatives", "0.16.0"
 
@@ -21,7 +21,7 @@ group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
   gem "rubocop", require: false
 
-  gem "decidim-dev", "0.16.0"
+  gem "decidim-dev"
 end
 
 group :development do
