@@ -32,3 +32,8 @@
 
 # Ignore public uploads
 public/uploads
+
+# Ignore environment file
+.env
+.env.development
+.env.production
