@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.17-stable"
-# gem "decidim-consultations", "0.16.0"
+gem "decidim-consultations"
 # gem "decidim-initiatives", "0.16.0"
 
 gem "airbrake", "~> 5.0"

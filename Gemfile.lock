@@ -59,6 +59,10 @@ GIT
     decidim-comments (0.17.0)
       decidim-core (= 0.17.0)
       jquery-rails (~> 4.0)
+    decidim-consultations (0.17.0)
+      decidim-admin (= 0.17.0)
+      decidim-comments (= 0.17.0)
+      decidim-core (= 0.17.0)
     decidim-core (0.17.0)
       active_link_to (~> 1.0)
       autoprefixer-rails (~> 8.0)
@@ -779,6 +783,7 @@ DEPENDENCIES
   capistrano-sidekiq (= 1.0)
   capistrano3-puma (~> 3.1)
   decidim!
+  decidim-consultations
   decidim-dev
   faker (~> 1.9)
   figaro (~> 1.1)
