@@ -5,6 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.17-stable"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "0.17-stable"
 gem "decidim-consultations"
 # gem "decidim-initiatives", "0.16.0"
 
