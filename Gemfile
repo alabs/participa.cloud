@@ -11,6 +11,7 @@ gem "decidim-consultations"
 
 gem "airbrake", "~> 5.0"
 gem "bootsnap", "~> 1.3"
+gem "deface", "~> 1.4"
 gem "faker", "~> 1.9"
 gem "figaro", "~> 1.1"
 gem "puma", "~> 3.0"
