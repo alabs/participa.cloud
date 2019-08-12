@@ -4,10 +4,8 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.17-stable"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "0.17-stable"
+gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.18-stable"
 gem "decidim-consultations"
-# gem "decidim-initiatives", "0.16.0"
 
 gem "airbrake", "~> 5.0"
 gem "bootsnap", "~> 1.3"
@@ -21,6 +19,7 @@ gem "uglifier", "~> 4.1"
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
+  gem "rspec-rails", "~> 3.8"
   gem "rubocop", require: false
 
   gem "decidim-dev"
