@@ -2,10 +2,13 @@
 
 Decidim.configure do |config|
   config.application_name = "Participa.cloud"
-  config.mailer_sender = "info@participa.cloud"
+  config.mailer_sender    = Rails.application.secrets.email
+
+  # Configure maximum attachment size
+  config.maximum_attachment_size = 5.megabytes
 
   # Change these lines to set your preferred locales
-  config.default_locale = :es
+  config.default_locale = :en
   config.available_locales = [:en, :ca, :es, :eu]
 
   # Geocoder configuration
@@ -15,8 +18,6 @@ Decidim.configure do |config|
     here_app_code: Rails.application.secrets.geocoder[:here_app_code]
   }
 
-  # configure maximum attachment size
-  config.maximum_attachment_size = 5.megabytes
 
   # Custom resource reference generator method
   # config.reference_generator = lambda do |resource, component|
