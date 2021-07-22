@@ -4,8 +4,8 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.21.0"
-gem "decidim-consultations", "0.21.0"
+gem "decidim", "0.23.6"
+gem "decidim-consultations", "0.23.6"
 
 gem "airbrake", "~> 5.0"
 gem "bootsnap", "~> 1.4"
@@ -14,7 +14,7 @@ gem "faker", "~> 1.9"
 gem "figaro", "~> 1.1"
 gem "puma", "~> 4.3.3"
 gem "redis-namespace"
-gem "sidekiq", "~> 5.2"
+gem "sidekiq"
 gem "uglifier", "~> 4.1"
 gem "loofah", "~> 2.3.1"
 
@@ -30,7 +30,7 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "rspec-rails", "~> 3.8"
   gem "rubocop", "~> 0.71.0"
-  gem "decidim-dev", "0.21.0"
+  gem "decidim-dev", "0.23.6"
   gem "nokogiri", ">= 1.10.8"
 end
 
